@@ -33,7 +33,7 @@ function App() {
   // --------------end of clear completed function-------------
   // removing todo
   function removeTodo(id){
-    const newTodo = todoList.filter((todo)=>todo.id != id)
+    const newTodo = todoList.filter((todo)=>todo.id !== id)
     setTodoList(newTodo)
   }
   //----------------------------------
