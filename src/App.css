@@ -1,0 +1,96 @@
+.container{
+  background: url('./images/bg-mobile-dark.jpg');
+  min-width: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #cacde8;
+  background-color: #161722; 
+  padding-top: 3em;
+  background-size: 100% 254px;
+  height: 100vh;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 85%;
+  margin: 0 auto;
+  letter-spacing: 0.5em;
+  max-width: 900px;
+}
+.todo-input{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2.5em ;
+  margin-bottom: 2.5em;
+  max-width: 900px;
+}
+.todo-input > input{
+  width: 100%;
+  outline: none;
+  background-color: #25273c;
+  color: #cacde8;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 1.2em;
+}
+.todo-info{
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 15px 15px;
+  border-radius: 5px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: #25273c;
+  max-width: 900px;
+}
+.clear-completed{
+  cursor: pointer;
+}
+
+.todo-footer-md{
+  display: none;
+
+}
+
+
+.todo-footer{
+  background-color: #25273c;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 2em;
+}
+.todo-footer > p{
+  margin: 0 0.6em;
+}
+
+
+
+
+@media  (min-width : 650px){
+  .container{
+    background: url('./images/bg-desktop-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #cacde8;
+    padding-top: 3em;
+    background-size: 100% 254px;
+    background-color: #161722;
+    height: 100vh;
+  }
+  .todo-footer-md{
+    display: flex;
+  }
+  .todo-footer-md > p{
+    margin: 0 0.4em;
+  }
+  .todo-footer{
+    display: none;
+  }
+}
